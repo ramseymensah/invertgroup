@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO OUR INVENTORY SITE</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .login-container h1 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #555555;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #4e54c8;
+            box-shadow: 0 0 5px rgba(78, 84, 200, 0.5);
+        }
+
+        .login-btn {
+            background-color: #4e54c8;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #8f94fb;
+        }
+
+        .login-btn:active {
+            background-color: #6e73d2;
+        }
+
+        .additional-links {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .additional-links a {
+            color: #4e54c8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .additional-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            window.location.href = 'about.html';
+        }
+    </script>
+</head>
+<body>
+    <video autoplay muted loop class="background-video">
+        <source src="U.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="#" method="post" onsubmit="handleLogin(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="id-number">ID Number</label>
+                <input type="text" id="id-number" name="id-number" placeholder="Enter your ID number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="additional-links">
+            <a href="SIGN.html">Forgot Password?</a>
+            <br>
+            <a href="SIGN.html">Create an Account</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- About Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4e54c8;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .team {
+            margin-top: 20px;
+        }
+
+        .team h2 {
+            color: #4e54c8;
+        }
+
+        .team ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .team ul li {
+            margin-bottom: 10px;
+        }
+
+        .team ul li strong {
+            color: #4e54c8;
+        }
+    </style>
+</head>
